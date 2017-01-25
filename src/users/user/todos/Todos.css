@@ -1,0 +1,7 @@
+#todos {
+    padding-top: 10px;
+    position: relative;
+}
+#todos .form-check-input {
+    margin-right: 5px;
+}
