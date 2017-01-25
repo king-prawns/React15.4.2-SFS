@@ -53,7 +53,7 @@ $ npm install -g http-server
 then 
 
 ```
-$ cd my-project\dist
+$ cd my-project\build
 http-server
 ```
 
@@ -63,7 +63,11 @@ $ cd my-project\fake_db
 $ json-server --watch db.json --port 4000
 ```
 
-- Go to [localhost](http://localhost:3000/)
+- Go to localhost
+
+a) for dev build: [localhost:3000](http://localhost:3000/)
+
+b) for prod build: [localhost:8080](http://localhost:8080/)
 
 ## Features
 
