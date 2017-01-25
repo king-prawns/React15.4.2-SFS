@@ -44,7 +44,7 @@ $ cd my-project
 $ npm run build
 ```
 
-Install [http-server][source](https://github.com/indexzero/http-server)
+Install [http-server](https://github.com/indexzero/http-server)
 
 A command-line http server
 ```
