@@ -25,8 +25,8 @@ class Topnav extends Component {
                     </Link>
                 </div>
                 <div className="btn-lang">
-                    <button type="button" className="btn btn-secondary btn-sm" onClick={() => this.handleLangClick('it')}>Italiano</button>
-                    <button type="button" className="btn btn-secondary btn-sm" onClick={() => this.handleLangClick('en')}>Inglese</button>
+                    <button type="button" className="btn btn-secondary btn-sm" onClick={() => this.handleLangClick('it')}>{t('BUTTON_LANG_IT')}</button>
+                    <button type="button" className="btn btn-secondary btn-sm" onClick={() => this.handleLangClick('en')}>{t('BUTTON_LANG_EN')}</button>
                 </div>
             </nav>
         );

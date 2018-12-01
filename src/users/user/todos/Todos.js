@@ -34,14 +34,9 @@ class Todos extends Component {
     });
   }
  
-  myTest(todos){
-    var completed = 0
-    for(var todo of todos){
-        if(todo.completed)
-            completed++
-    }
-    return completed
-  }
+	completedTodos(todos) {
+		return todos.filter(t => t.completed).length;
+	}
 
   render() {
     const { t } = this.props;
@@ -54,13 +49,13 @@ class Todos extends Component {
             <button type="button" className="btn btn-success top-right">{t('BACK_TO_USER')}</button>
             </Link>
             <h4>TODO:
-            {this.myTest(todos)}
+            {this.completedTodos(todos)}
             /
             {todos.length}</h4>
             {todos.map((todo)=> 
                 <div key={todo.id} className="form-check disabled">
                     <label className="form-check-label">
-                        <input type="checkbox" className="form-check-input" disabled />
+                        <input type="checkbox" className="form-check-input" disabled checked={todo.completed} />
                         {todo.title}
                     </label>
                 </div>
